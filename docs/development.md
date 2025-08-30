@@ -53,3 +53,7 @@ npx vitest
 or
 npx vitest run
 ```
+
+## github
+
+git remote set-url origin https://ユーザ名:アクセストークン@github.com/ユーザ名/リポジトリ名.git
