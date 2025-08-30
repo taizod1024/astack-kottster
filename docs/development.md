@@ -25,3 +25,15 @@ wsl2 から直接実行
 ```
 npm run dev
 ```
+
+## ライブラリインストール
+
+```
+npm install
+```
+
+## Prisma 初期化
+
+```
+npx prisma init
+```
