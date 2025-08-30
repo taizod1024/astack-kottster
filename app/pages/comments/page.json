@@ -6,6 +6,12 @@
   "config": {
     "dataSource": "sqlite_db_hd39tw",
     "fetchStrategy": "databaseTable",
-    "table": "Comment"
+    "table": "Comment",
+    "columns": [
+      {
+        "column": "createdAt",
+        "hiddenInTable": true
+      }
+    ]
   }
 }
