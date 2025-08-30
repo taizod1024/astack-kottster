@@ -3,5 +3,12 @@
   "meta": {
     "name": "astack",
     "icon": "https://web.kottster.app/icon.png"
-  }
+  },
+  "menuPageOrder": [
+    "posts",
+    "users",
+    "users2",
+    "comments",
+    "dashboard"
+  ]
 }

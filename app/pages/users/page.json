@@ -1,0 +1,79 @@
+{
+  "version": "1.0",
+  "type": "table",
+  "title": "Users",
+  "hideInSidebar": false,
+  "config": {
+    "dataSource": "sqlite_db_hd39tw",
+    "fetchStrategy": "databaseTable",
+    "table": "User",
+    "columns": [
+      {
+        "column": "createdAt",
+        "label": "Created at",
+        "hiddenInTable": false,
+        "hiddenInForm": true,
+        "filterable": true,
+        "sortable": true,
+        "searchable": true,
+        "suffix": "",
+        "fieldInput": {
+          "type": "dateTimePicker",
+          "asArray": false
+        },
+        "fieldRequirement": "notEmpty",
+        "formFieldSpan": "12"
+      },
+      {
+        "column": "id",
+        "label": "Id",
+        "hiddenInTable": false,
+        "hiddenInForm": true,
+        "filterable": false,
+        "sortable": true,
+        "searchable": false,
+        "fieldInput": {
+          "type": "numberInput",
+          "asArray": false
+        },
+        "fieldRequirement": "notEmpty",
+        "formFieldSpan": "4"
+      },
+      {
+        "column": "name",
+        "label": "Name",
+        "hiddenInTable": false,
+        "hiddenInForm": false,
+        "filterable": true,
+        "sortable": true,
+        "searchable": true,
+        "fieldInput": {
+          "type": "textarea",
+          "asArray": false
+        },
+        "fieldRequirement": "notEmpty",
+        "formFieldSpan": "12"
+      },
+      {
+        "column": "email",
+        "label": "Email",
+        "hiddenInTable": false,
+        "hiddenInForm": false,
+        "filterable": true,
+        "sortable": true,
+        "searchable": true,
+        "fieldInput": {
+          "type": "textarea",
+          "asArray": false
+        },
+        "fieldRequirement": "notEmpty",
+        "formFieldSpan": "12"
+      }
+    ],
+    "allowInsert": true,
+    "allowDelete": true
+  },
+  "allowedRoleIds": [
+    "5579"
+  ]
+}

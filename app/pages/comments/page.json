@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "type": "table",
+  "title": "Comments",
+  "hideInSidebar": false,
+  "config": {
+    "dataSource": "sqlite_db_hd39tw",
+    "fetchStrategy": "databaseTable",
+    "table": "Comment"
+  }
+}

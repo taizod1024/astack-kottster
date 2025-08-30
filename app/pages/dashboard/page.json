@@ -1,0 +1,65 @@
+{
+  "version": "1.0",
+  "type": "dashboard",
+  "title": "Dashboard",
+  "hideInSidebar": false,
+  "config": {
+    "withDateRangePicker": true,
+    "stats": [
+      {
+        "key": "stat_ww4nqc",
+        "fetchStrategy": "rawSqlQuery",
+        "type": "ratio",
+        "dataSource": "sqlite_db_hd39tw",
+        "title": "User counts#2",
+        "sqlQuery": "SELECT COUNT(*) FROM User WHERE createdAt BETWEEN :period_start_date AND :period_end_date",
+        "sqlTotalQuery": "SELECT COUNT(*) FROM User",
+        "id": "stat_ww4nqc"
+      },
+      {
+        "key": "stat_ww4nqb",
+        "fetchStrategy": "rawSqlQuery",
+        "type": "ratio",
+        "dataSource": "sqlite_db_hd39tw",
+        "title": "User counts#1",
+        "sqlQuery": "SELECT COUNT(*) FROM User WHERE createdAt BETWEEN :period_start_date AND :period_end_date",
+        "sqlTotalQuery": "SELECT COUNT(*) FROM User",
+        "id": "stat_ww4nqb"
+      }
+    ],
+    "cards": [
+      {
+        "key": "card_agykjb",
+        "fetchStrategy": "rawSqlQuery",
+        "type": "lineChart",
+        "dataSource": "sqlite_db_hd39tw",
+        "values": [
+          {
+            "alias": "user_count",
+            "color": "#0245ff"
+          }
+        ],
+        "dataKeyAlias": "date",
+        "title": "User available#2",
+        "sqlQuery": "SELECT DATE(createdAt) as date, COUNT(DISTINCT id) as user_count FROM User WHERE createdAt BETWEEN :period_start_date AND :period_end_date GROUP BY DATE(createdAt) ORDER BY date",
+        "id": "card_agykjb"
+      },
+      {
+        "key": "card_agykja",
+        "fetchStrategy": "rawSqlQuery",
+        "type": "lineChart",
+        "dataSource": "sqlite_db_hd39tw",
+        "values": [
+          {
+            "alias": "user_count",
+            "color": "#0245ff"
+          }
+        ],
+        "dataKeyAlias": "date",
+        "title": "User available#1",
+        "sqlQuery": "SELECT DATE(createdAt) as date, COUNT(DISTINCT id) as user_count FROM User WHERE createdAt BETWEEN :period_start_date AND :period_end_date GROUP BY DATE(createdAt) ORDER BY date",
+        "id": "card_agykja"
+      }
+    ]
+  }
+}
