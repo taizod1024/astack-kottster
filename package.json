@@ -22,16 +22,20 @@
   },
   "devDependencies": {
     "@prisma/client": "^6.15.0",
+    "@testing-library/jest-dom": "^6.8.0",
+    "@testing-library/react": "^16.3.0",
     "@types/node": "^20.x",
     "@types/react": "^19.x",
     "@types/react-dom": "^19.x",
     "@vitejs/plugin-react": "^4.x",
+    "@vitest/ui": "^3.2.4",
     "prisma": "^6.15.0",
     "ts-node": "^10.9.2",
     "tsx": "^4.x",
     "typescript": "^5.x",
     "vite": "^6.x",
-    "vite-tsconfig-paths": "^4.x"
+    "vite-tsconfig-paths": "^4.x",
+    "vitest": "^3.2.4"
   },
   "engines": {
     "node": ">=20"
