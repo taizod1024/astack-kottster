@@ -6,6 +6,100 @@
   "config": {
     "dataSource": "sqlite_db_hd39tw",
     "fetchStrategy": "databaseTable",
-    "table": "Post"
+    "table": "Post",
+    "columns": [
+      {
+        "column": "id",
+        "label": "Id",
+        "hiddenInTable": false,
+        "hiddenInForm": true,
+        "filterable": true,
+        "sortable": true,
+        "searchable": false,
+        "position": 0,
+        "relationshipPreviewColumns": [],
+        "fieldInput": {
+          "type": "numberInput",
+          "asArray": false
+        },
+        "fieldRequirement": "notEmpty",
+        "formFieldSpan": "12",
+        "id": "id"
+      },
+      {
+        "column": "title",
+        "label": "Title",
+        "hiddenInTable": false,
+        "hiddenInForm": false,
+        "filterable": true,
+        "sortable": false,
+        "searchable": true,
+        "position": 1,
+        "relationshipPreviewColumns": [],
+        "fieldInput": {
+          "type": "textarea",
+          "asArray": false
+        },
+        "fieldRequirement": "notEmpty",
+        "formFieldSpan": "12",
+        "id": "title"
+      },
+      {
+        "column": "content",
+        "label": "Content",
+        "hiddenInTable": false,
+        "hiddenInForm": false,
+        "filterable": true,
+        "sortable": false,
+        "searchable": true,
+        "position": 2,
+        "relationshipPreviewColumns": [],
+        "fieldInput": {
+          "type": "textarea",
+          "asArray": false
+        },
+        "fieldRequirement": "notEmpty",
+        "formFieldSpan": "12",
+        "id": "content"
+      },
+      {
+        "column": "authorId",
+        "label": "authorId",
+        "hiddenInTable": false,
+        "hiddenInForm": false,
+        "filterable": true,
+        "sortable": true,
+        "searchable": false,
+        "position": 3,
+        "relationshipPreviewColumns": [
+          "name"
+        ],
+        "fieldInput": {
+          "type": "recordSelect",
+          "asArray": false
+        },
+        "fieldRequirement": "notEmpty",
+        "formFieldSpan": "12",
+        "id": "authorId"
+      },
+      {
+        "column": "createdAt",
+        "label": "Created at",
+        "hiddenInTable": false,
+        "hiddenInForm": false,
+        "filterable": true,
+        "sortable": true,
+        "searchable": false,
+        "position": 4,
+        "relationshipPreviewColumns": [],
+        "fieldInput": {
+          "type": "dateTimePicker",
+          "asArray": false
+        },
+        "fieldRequirement": "notEmpty",
+        "formFieldSpan": "12",
+        "id": "createdAt"
+      }
+    ]
   }
 }

@@ -71,7 +71,29 @@
       }
     ],
     "allowInsert": true,
-    "allowDelete": true
+    "allowDelete": true,
+    "nested": {
+      "Comment__p__authorId": {
+        "table": "Comment",
+        "fetchStrategy": "databaseTable",
+        "columns": [
+          {
+            "column": "createdAt",
+            "hiddenInTable": false
+          }
+        ]
+      }
+    },
+    "relationships": [
+      {
+        "key": "Post_by_authorId",
+        "hiddenInTable": false
+      },
+      {
+        "key": "Comment_by_authorId",
+        "hiddenInTable": true
+      }
+    ]
   },
   "allowedRoleIds": [
     "5579"
