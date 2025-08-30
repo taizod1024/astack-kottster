@@ -1,0 +1,10 @@
+services:
+  astack-app:
+    build: .
+    ports:
+      - "5480:5480"
+    volumes:
+      - .:/app
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
