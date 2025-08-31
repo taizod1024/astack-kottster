@@ -43,7 +43,7 @@
         "title": "User available#2",
         "sqlQuery": "SELECT DATE(createdAt) as date, COUNT(DISTINCT id) as user_count FROM User WHERE createdAt BETWEEN :period_start_date AND :period_end_date GROUP BY DATE(createdAt) ORDER BY date",
         "id": "card_agykjb",
-        "span": "4"
+        "span": "8"
       },
       {
         "key": "card_agykja",
