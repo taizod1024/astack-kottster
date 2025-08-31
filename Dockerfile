@@ -4,9 +4,11 @@ WORKDIR /app
 
 COPY . .
 
-RUN apk add --no-cache git tini
+RUN apk add --no-cache git tini sqlite
 
 RUN npm install
+RUN npx prisma generate
+RUN npm rebuild better-sqlite3
 
 EXPOSE 5480 5481
 
