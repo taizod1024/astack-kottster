@@ -44,6 +44,7 @@ schema.prisma の output 行を削除
 npx prisma migrate dev --name init
 npx prisma generate
 npx prisma db seed
+npx prisma studio
 ```
 
 ## ユニットテスト

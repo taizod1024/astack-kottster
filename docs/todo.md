@@ -8,10 +8,9 @@
 - [x] docker 化
 - [x] docker-compose.yml 化
 - [x] 開発コンテナ化
-- [ ] .env 化
-  - .env で PORT を指定してもそこまで自由に変えられないかもしれない。あくまで開発リポジトリで開発用途の環境変数ということになる。
+- [x] .env 化
+  - docker run、docker-compose.yml、.env はコンテナに対してポートを指定する方法では同じ立ち位置
 - [ ] github copilot 指示
-- [ ] コミット時は基本的に chore
 - [ ] astack-adminjs のタスクの再取り込み
 - [ ] デバッグ方法
 - [ ] コミット戦略
