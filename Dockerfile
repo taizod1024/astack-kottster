@@ -1,14 +1,23 @@
-# Node.js + SQLite + Prisma + Vite + Vitest 用 Dockerfile
-FROM node:20-slim
+FROM node:22-alpine
 
 WORKDIR /app
 
-
-# プロジェクト全体を一括コピー（.dockerignoreで不要ファイル除外）
 COPY . .
+
+RUN apk add --no-cache git tini
 
 RUN npm install
 
-EXPOSE 3000
+EXPOSE 5480 5481
 
-CMD ["npm", "run", "dev"]
+ENV VITE_DOCKER_MODE=true
+ENV PORT=5480
+ENV DEV_API_SERVER_PORT=5481
+
+COPY scripts/dev.sh /dev.sh
+COPY scripts/prod.sh /prod.sh
+RUN chmod +x /dev.sh /prod.sh
+
+ENTRYPOINT ["/sbin/tini", "--"]
+
+CMD ["tail", "-f", "/dev/null"]

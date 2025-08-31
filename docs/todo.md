@@ -5,9 +5,11 @@
 - [x] sqlite 対応
 - [x] prisma 対応
 - [x] ユニットテスト対応
-- [ ] docker 化
+- [x] docker 化
 - [ ] docker-compose.yml 化
+- [ ] 開発コンテナ化
 - [ ] .env 化
+  - .env で PORT を指定してもそこまで自由に変えられないかもしれない。あくまで開発リポジトリで開発用途の環境変数ということになる。
 - [ ] github copilot 指示
 - [ ] コミット時は基本的に chore
 - [ ] astack-adminjs のタスクの再取り込み
@@ -59,13 +61,13 @@
 
 #### 優先度中
 
-- [x] 開発コンテナを立ち上げても http://localhost:3000/adminjs にアクセスできない場合
+- [x] 開発コンテナを立ち上げても http://localhost:5480/adminjs にアクセスできない場合
   - `.devcontainer/docker-compose.yml`の command が sleep infinity になっていることが原因
 - [x] Prisma のスキーマが AdminJS に反映されない場合
   - AdminJS は node_modules/@prisma/client を参照している模様。そのため schema.prisma の output を指定してはスキーマの変更を反映できない。
   - 正しい手順は ①schema.prisma を修正、②npx prisma migration dev を実行、③npx prisma generate を実行、④ コンテナを再起動
 - [x] AdminJS が起動しない場合
-  - 開発コンテナを立ち上げても http://localhost:3000/adminjs にアクセスできない場合と同じ
+  - 開発コンテナを立ち上げても http://localhost:5480/adminjs にアクセスできない場合と同じ
 - [x] 操作していると root:root に代わってしまう。
   - 修正方法は`sudo chown -R taizo:taizo *`
   - 開発コンテナ起動時に root で npm install されている可能性あり

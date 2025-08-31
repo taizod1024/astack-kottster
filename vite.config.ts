@@ -8,6 +8,8 @@ export default defineConfig({
     // Use the PORT environment variable to set the port in production
     port: Number(process.env.PORT),
     open: false,
+    // Required for Docker
+    host: "0.0.0.0",
   },
   build: {
     outDir: "../dist/client",

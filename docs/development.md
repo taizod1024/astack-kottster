@@ -57,3 +57,16 @@ npx vitest run
 ## github
 
 git remote set-url origin https://ユーザ名:アクセストークン@github.com/ユーザ名/リポジトリ名.git
+
+## docker
+
+```
+docker build -t astack-app .
+docker run -d --name astack-app -p 5480:5480 -p 5481:5481 -v $(pwd):/app -v /app/node_modules astack-app
+docker ps
+docker logs astack-app
+docker exec -it astack-app /dev.sh
+docker exec -it astack-app /prod.sh
+docker stop astack-app
+docker rm astack-app
+```
