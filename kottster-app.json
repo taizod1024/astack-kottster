@@ -5,9 +5,9 @@
     "icon": "https://web.kottster.app/icon.png"
   },
   "menuPageOrder": [
+    "dashboard",
     "users",
     "posts",
-    "comments",
-    "dashboard"
+    "comments"
   ]
 }

@@ -42,7 +42,8 @@
         "dataKeyAlias": "date",
         "title": "User available#2",
         "sqlQuery": "SELECT DATE(createdAt) as date, COUNT(DISTINCT id) as user_count FROM User WHERE createdAt BETWEEN :period_start_date AND :period_end_date GROUP BY DATE(createdAt) ORDER BY date",
-        "id": "card_agykjb"
+        "id": "card_agykjb",
+        "span": "4"
       },
       {
         "key": "card_agykja",
@@ -58,7 +59,9 @@
         "dataKeyAlias": "date",
         "title": "User available#1",
         "sqlQuery": "SELECT DATE(createdAt) as date, COUNT(DISTINCT id) as user_count FROM User WHERE createdAt BETWEEN :period_start_date AND :period_end_date GROUP BY DATE(createdAt) ORDER BY date",
-        "id": "card_agykja"
+        "id": "card_agykja",
+        "span": "4",
+        "withDots": true
       }
     ]
   }
