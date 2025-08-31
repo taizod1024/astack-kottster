@@ -1,5 +1,5 @@
 services:
-  app:
+  astack-app:
     build:
       context: .
       dockerfile: Dockerfile
