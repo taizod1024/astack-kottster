@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "ms-vscode-remote.remote-containers",
+    "ms-ceintl.vscode-language-pack-ja",
+    "bocovo.prisma-erd-visualizer",
+    "esbenp.prettier-vscode",
+    "mhutchie.git-graph",
+    "shd101wyy.markdown-preview-enhanced"
+  ]
+}
