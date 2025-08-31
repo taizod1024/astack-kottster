@@ -20,4 +20,4 @@ RUN chmod +x /dev.sh /prod.sh
 
 ENTRYPOINT ["/sbin/tini", "--"]
 
-CMD ["tail", "-f", "/dev/null"]
+CMD ["/dev.sh"]

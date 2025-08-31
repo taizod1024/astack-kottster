@@ -6,7 +6,7 @@
 - [x] prisma 対応
 - [x] ユニットテスト対応
 - [x] docker 化
-- [ ] docker-compose.yml 化
+- [x] docker-compose.yml 化
 - [ ] 開発コンテナ化
 - [ ] .env 化
   - .env で PORT を指定してもそこまで自由に変えられないかもしれない。あくまで開発リポジトリで開発用途の環境変数ということになる。
