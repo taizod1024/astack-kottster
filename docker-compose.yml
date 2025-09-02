@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: astack-kottster-container
+    container_name: astack-kottster-app-container
     ports:
       - "5480:5480"
       - "5481:5481"
