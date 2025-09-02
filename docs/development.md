@@ -70,4 +70,6 @@ docker exec -it astack-app /dev.sh
 docker exec -it astack-app /prod.sh
 docker stop astack-app
 docker rm astack-app
+docker rm $(docker ps -a -q)
+docker rmi $(docker images -q)
 ```
