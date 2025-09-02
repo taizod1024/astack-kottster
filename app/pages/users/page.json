@@ -82,6 +82,204 @@
             "hiddenInTable": false
           }
         ]
+      },
+      "Post__p__authorId": {
+        "table": "Post",
+        "fetchStrategy": "databaseTable",
+        "columns": [
+          {
+            "column": "id",
+            "label": "Id",
+            "hiddenInTable": false,
+            "hiddenInForm": true,
+            "filterable": true,
+            "sortable": true,
+            "searchable": false,
+            "position": 0,
+            "relationshipPreviewColumns": [],
+            "fieldInput": {
+              "type": "numberInput",
+              "asArray": false
+            },
+            "fieldRequirement": "notEmpty",
+            "formFieldSpan": "12",
+            "id": "id"
+          },
+          {
+            "column": "authorId",
+            "label": "authorId",
+            "hiddenInTable": false,
+            "hiddenInForm": false,
+            "filterable": true,
+            "sortable": true,
+            "searchable": false,
+            "position": 1,
+            "relationshipPreviewColumns": [
+              "name"
+            ],
+            "fieldInput": {
+              "type": "recordSelect",
+              "asArray": false
+            },
+            "fieldRequirement": "notEmpty",
+            "formFieldSpan": "12",
+            "id": "authorId"
+          },
+          {
+            "column": "title",
+            "label": "Title",
+            "hiddenInTable": false,
+            "hiddenInForm": false,
+            "filterable": true,
+            "sortable": false,
+            "searchable": true,
+            "position": 2,
+            "relationshipPreviewColumns": [],
+            "fieldInput": {
+              "type": "textarea",
+              "asArray": false
+            },
+            "fieldRequirement": "notEmpty",
+            "formFieldSpan": "12",
+            "id": "title"
+          },
+          {
+            "column": "content",
+            "label": "Content",
+            "hiddenInTable": false,
+            "hiddenInForm": false,
+            "filterable": true,
+            "sortable": false,
+            "searchable": true,
+            "position": 3,
+            "relationshipPreviewColumns": [],
+            "fieldInput": {
+              "type": "textarea",
+              "asArray": false
+            },
+            "fieldRequirement": "notEmpty",
+            "formFieldSpan": "12",
+            "id": "content"
+          },
+          {
+            "column": "createdAt",
+            "label": "Created at",
+            "hiddenInTable": false,
+            "hiddenInForm": false,
+            "filterable": true,
+            "sortable": true,
+            "searchable": false,
+            "position": 4,
+            "relationshipPreviewColumns": [],
+            "fieldInput": {
+              "type": "dateTimePicker",
+              "asArray": false
+            },
+            "fieldRequirement": "notEmpty",
+            "formFieldSpan": "12",
+            "id": "createdAt"
+          }
+        ]
+      },
+      "Post__p__authorId___Comment__p__postId": {
+        "table": "Comment",
+        "fetchStrategy": "databaseTable",
+        "columns": [
+          {
+            "column": "id",
+            "label": "Id",
+            "hiddenInTable": false,
+            "hiddenInForm": true,
+            "filterable": true,
+            "sortable": true,
+            "searchable": false,
+            "position": 0,
+            "relationshipPreviewColumns": [],
+            "fieldInput": {
+              "type": "numberInput",
+              "asArray": false
+            },
+            "fieldRequirement": "notEmpty",
+            "formFieldSpan": "12",
+            "id": "id"
+          },
+          {
+            "column": "authorId",
+            "label": "authorId",
+            "hiddenInTable": false,
+            "hiddenInForm": false,
+            "filterable": true,
+            "sortable": true,
+            "searchable": false,
+            "position": 1,
+            "relationshipPreviewColumns": [
+              "name"
+            ],
+            "fieldInput": {
+              "type": "recordSelect",
+              "asArray": false
+            },
+            "fieldRequirement": "notEmpty",
+            "formFieldSpan": "12",
+            "id": "authorId"
+          },
+          {
+            "column": "postId",
+            "label": "postId",
+            "hiddenInTable": false,
+            "hiddenInForm": false,
+            "filterable": true,
+            "sortable": true,
+            "searchable": false,
+            "position": 2,
+            "relationshipPreviewColumns": [
+              "title"
+            ],
+            "fieldInput": {
+              "type": "recordSelect",
+              "asArray": false
+            },
+            "fieldRequirement": "notEmpty",
+            "formFieldSpan": "12",
+            "id": "postId"
+          },
+          {
+            "column": "content",
+            "label": "Content",
+            "hiddenInTable": false,
+            "hiddenInForm": false,
+            "filterable": true,
+            "sortable": false,
+            "searchable": true,
+            "position": 3,
+            "relationshipPreviewColumns": [],
+            "fieldInput": {
+              "type": "textarea",
+              "asArray": false
+            },
+            "fieldRequirement": "notEmpty",
+            "formFieldSpan": "12",
+            "id": "content"
+          },
+          {
+            "column": "createdAt",
+            "label": "Created at",
+            "hiddenInTable": false,
+            "hiddenInForm": false,
+            "filterable": true,
+            "sortable": true,
+            "searchable": false,
+            "position": 4,
+            "relationshipPreviewColumns": [],
+            "fieldInput": {
+              "type": "dateTimePicker",
+              "asArray": false
+            },
+            "fieldRequirement": "notEmpty",
+            "formFieldSpan": "12",
+            "id": "createdAt"
+          }
+        ]
       }
     },
     "relationships": [

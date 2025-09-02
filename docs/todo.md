@@ -10,6 +10,9 @@
 - [x] 開発コンテナ化
 - [x] .env 化
   - docker run、docker-compose.yml、.env はコンテナに対してポートを指定する方法では同じ立ち位置
+- [ ] ログイン独自対応
+  - 不可、認証はすべて kottster で行われるため
+    https://kottster.app/docs/security/authentication#authentication
 - [ ] デバッグ方法
 - [ ] github copilot 指示
 - [ ] astack-adminjs のタスクの再取り込み
